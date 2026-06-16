@@ -51,7 +51,7 @@ Před ostrým použitím je potřeba:
 
 - GitHub repo `klarka-stranky-preview` je propojené s Netlify,
 - Netlify Identity je zapnuté a nastavené na pozvánky,
-- zapnout Git Gateway v Netlify UI: Project configuration > Identity > Services > Git Gateway,
+- Git Gateway je zapnutý a napojený na `petmal10-droid/klarka-stranky-preview`,
 - doplnit skutečný kontaktní e-mail, telefon, lokalitu a právní údaje provozovatele,
 - pokud se použije vlastní doména, přidat nový `CNAME` s Klárka doménou a aktualizovat `site_url`, `display_url` a reCAPTCHA domény.
 
@@ -74,4 +74,4 @@ Tento základ stále obsahuje velkou část textace a vizuální identity převz
 - Netlify admin: `https://app.netlify.com/projects/klarka-stranky-preview`
 - Identity endpoint ověřen: `/.netlify/identity/settings`
 - Registrace je invite-only (`disable_signup: true`)
-- Git Gateway endpoint zatím vrací 404, dokud není služba zapnutá v Netlify UI.
+- Git Gateway je aktivní jako Netlify service `/.netlify/git`.
