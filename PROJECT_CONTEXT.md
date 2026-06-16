@@ -49,9 +49,9 @@ Administrace používá Sveltia CMS přes Netlify Identity + Git Gateway. Klient
 
 Před ostrým použitím je potřeba:
 
-- propojit GitHub repo `klarka-stranky-preview` s Netlify,
-- zapnout Netlify Identity,
-- zapnout Git Gateway,
+- GitHub repo `klarka-stranky-preview` je propojené s Netlify,
+- Netlify Identity je zapnuté a nastavené na pozvánky,
+- zapnout Git Gateway v Netlify UI: Project configuration > Identity > Services > Git Gateway,
 - doplnit skutečný kontaktní e-mail, telefon, lokalitu a právní údaje provozovatele,
 - pokud se použije vlastní doména, přidat nový `CNAME` s Klárka doménou a aktualizovat `site_url`, `display_url` a reCAPTCHA domény.
 
@@ -66,3 +66,12 @@ Před ostrým použitím je potřeba:
 ## Poznámky k prvnímu stavu
 
 Tento základ stále obsahuje velkou část textace a vizuální identity převzatou z Lucka webu jako výchozí šablonu pro Klárku. Viditelné osobní údaje jsou nastavené jako pracovní placeholdery a mají se před spuštěním nahradit finálními údaji klientky.
+
+## Netlify stav
+
+- Netlify site: `klarka-stranky-preview`
+- Netlify URL: `https://klarka-stranky-preview.netlify.app/`
+- Netlify admin: `https://app.netlify.com/projects/klarka-stranky-preview`
+- Identity endpoint ověřen: `/.netlify/identity/settings`
+- Registrace je invite-only (`disable_signup: true`)
+- Git Gateway endpoint zatím vrací 404, dokud není služba zapnutá v Netlify UI.

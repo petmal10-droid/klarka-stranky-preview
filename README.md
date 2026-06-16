@@ -23,4 +23,4 @@ Plánovaná Netlify preview URL:
 
 `https://klarka-stranky-preview.netlify.app/`
 
-Před spuštěním je potřeba propojit repo s Netlify, zapnout Identity, zapnout Git Gateway a doplnit skutečné kontaktní, právní a případné doménové údaje.
+Repo je propojené s Netlify a Identity je zapnuté v režimu pozvánek. Před klientským používáním CMS je potřeba v Netlify UI zapnout Git Gateway a doplnit skutečné kontaktní, právní a případné doménové údaje.
