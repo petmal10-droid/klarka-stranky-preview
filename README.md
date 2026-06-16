@@ -13,12 +13,14 @@
 
 ## CMS a hosting
 
-Administrace používá Sveltia CMS s GitHub backendem. Výchozí konfigurace je připravena pro repo:
+Administrace používá Sveltia CMS přes Netlify Identity + Git Gateway. Klientka se přihlašuje e-mailem a heslem, bez GitHub účtu.
+
+GitHub repo zůstává technické úložiště:
 
 `petmal10-droid/klarka-stranky-preview`
 
-Preview URL je připravená pro GitHub Pages:
+Plánovaná Netlify preview URL:
 
-`https://petmal10-droid.github.io/klarka-stranky-preview/`
+`https://klarka-stranky-preview.netlify.app/`
 
-Před spuštěním je potřeba vytvořit GitHub repo, zapnout GitHub Pages z větve `main` a doplnit skutečné kontaktní, právní a případné doménové údaje.
+Před spuštěním je potřeba propojit repo s Netlify, zapnout Identity, zapnout Git Gateway a doplnit skutečné kontaktní, právní a případné doménové údaje.

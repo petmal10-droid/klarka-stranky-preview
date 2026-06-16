@@ -12,8 +12,8 @@ Aktualizováno: 2026-06-16
 - Zdrojová produkční verze: commit `c486417` ze složky `C:\Users\malp\Documents\Lucka stránky`
 - Ověření zdroje: commit `c486417` se shodoval s aktuálním živým webem `https://www.bemer-lucie.cz/`
 - Plánované GitHub repo: `petmal10-droid/klarka-stranky-preview`
-- Plánovaný preview hosting: GitHub Pages z větve `main`
-- Plánovaná preview URL: `https://petmal10-droid.github.io/klarka-stranky-preview/`
+- Plánovaný preview hosting: Netlify
+- Plánovaná preview URL: `https://klarka-stranky-preview.netlify.app/`
 - Produkční doména Klárka webu: zatím nedoplněna
 - Hlavní soubory: `index.html`, `styles.css`, `script.js`, `content/site.json`, `admin/config.yml`
 
@@ -38,19 +38,20 @@ Záměrně nebyly přeneseny staré varianty, porovnávací stránky, Pastel sou
 
 ## CMS
 
-Administrace používá stejný typ jako původní web: Sveltia CMS přes GitHub backend.
+Administrace používá Sveltia CMS přes Netlify Identity + Git Gateway. Klientka se má přihlašovat e-mailem a heslem, bez GitHub účtu.
 
 - CMS vstup: `admin/index.html`
 - CMS konfigurace: `admin/config.yml`
 - Obsah webu: `content/site.json`
 - Upload složka: `uploads`
-- Backend repo je připravené jako `petmal10-droid/klarka-stranky-preview`
-- `site_url` a `display_url` směřují na GitHub Pages preview Klárka projektu
+- Backend Git Gateway bude zapisovat do repo `petmal10-droid/klarka-stranky-preview`
+- `site_url` a `display_url` směřují na Netlify preview Klárka projektu
 
 Před ostrým použitím je potřeba:
 
-- vytvořit GitHub repo `klarka-stranky-preview`, nebo v `admin/config.yml` změnit `repo` na finální název,
-- zapnout GitHub Pages z větve `main`,
+- propojit GitHub repo `klarka-stranky-preview` s Netlify,
+- zapnout Netlify Identity,
+- zapnout Git Gateway,
 - doplnit skutečný kontaktní e-mail, telefon, lokalitu a právní údaje provozovatele,
 - pokud se použije vlastní doména, přidat nový `CNAME` s Klárka doménou a aktualizovat `site_url`, `display_url` a reCAPTCHA domény.
 

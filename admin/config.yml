@@ -1,21 +1,18 @@
 # yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
 
 backend:
-  name: github
-  repo: petmal10-droid/klarka-stranky-preview
+  name: git-gateway
   branch: main
-  # Administrace používá Sveltia CMS, které je kompatibilní s Decap/Netlify CMS
-  # konfigurací a na GitHub Pages umožňuje rychlé přihlášení přes GitHub token.
-  # Pro pohodlnější OAuth přihlášení bez tokenu lze později doplnit base_url
-  # na vlastní OAuth proxy.
+  # Administrace používá Sveltia CMS přes Netlify Identity + Git Gateway.
+  # Klientka se přihlásí e-mailem a heslem, bez GitHub účtu a bez GitHub tokenu.
 
 media_folder: uploads
 public_folder: /uploads
 publish_mode: simple
 
 locale: cs
-site_url: https://petmal10-droid.github.io/klarka-stranky-preview/
-display_url: https://petmal10-droid.github.io/klarka-stranky-preview/
+site_url: https://klarka-stranky-preview.netlify.app/
+display_url: https://klarka-stranky-preview.netlify.app/
 
 collections:
   - name: site_content
