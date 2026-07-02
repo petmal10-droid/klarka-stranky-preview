@@ -1,9 +1,9 @@
-# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+# yaml-language-server: $schema=https://unpkg.com/decap-cms@^3.0.0/schema.yml
 
 backend:
   name: git-gateway
   branch: main
-  # Administrace používá Sveltia CMS přes Netlify Identity + Git Gateway.
+  # Administrace používá Decap CMS přes Netlify Identity + Git Gateway.
   # Klientka se přihlásí e-mailem a heslem, bez GitHub účtu a bez GitHub tokenu.
 
 media_folder: uploads

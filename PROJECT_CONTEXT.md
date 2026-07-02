@@ -38,7 +38,7 @@ Záměrně nebyly přeneseny staré varianty, porovnávací stránky, Pastel sou
 
 ## CMS
 
-Administrace používá Sveltia CMS přes Netlify Identity + Git Gateway. Klientka se má přihlašovat e-mailem a heslem, bez GitHub účtu.
+Administrace používá Decap CMS přes Netlify Identity + Git Gateway. Klientka se má přihlašovat e-mailem a heslem, bez GitHub účtu.
 
 - CMS vstup: `admin/index.html`
 - CMS konfigurace: `admin/config.yml`

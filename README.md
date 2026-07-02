@@ -8,12 +8,12 @@
 - `styles.css` - styly
 - `script.js` - chování webu a načítání CMS obsahu
 - `content/site.json` - obsah spravovaný přes CMS
-- `admin/` - Sveltia CMS administrace
+- `admin/` - Decap CMS administrace
 - `uploads/` - média nahraná přes CMS
 
 ## CMS a hosting
 
-Administrace používá Sveltia CMS přes Netlify Identity + Git Gateway. Klientka se přihlašuje e-mailem a heslem, bez GitHub účtu.
+Administrace používá Decap CMS přes Netlify Identity + Git Gateway. Klientka se přihlašuje e-mailem a heslem, bez GitHub účtu.
 
 GitHub repo zůstává technické úložiště:
 
